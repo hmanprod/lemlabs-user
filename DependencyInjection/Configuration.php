@@ -18,7 +18,14 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('lem_labs_user');
+        $rootNode = $treeBuilder->root('lemlabs_user');
+        
+        $rootNode
+            ->children()
+                        ->integerNode('class')->end()
+                        ->integerNode('redirect_uri_after_login')->end()
+            ->end()
+        ;
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
