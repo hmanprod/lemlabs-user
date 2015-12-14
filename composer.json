@@ -1,0 +1,26 @@
+{
+    "name" : "lemlabs/user-bundle",
+    "description" : "Simple authentification controller for SF2",
+    "type" : "symfony-bundle",
+	"license" : "GPL-3.0+",
+    "authors" : [{
+        "name" : "RABOTOVAO Hery",
+        "email" : "hmanprod@gmail.com"
+    }],
+    "keywords" : [
+        "lemlabs user bundle"
+    ],
+    "require" : {
+            "php" : ">=5.4.0",
+            "symfony/framework-bundle" : ">=2.3.0",
+            "twig/twig" : "*",
+            "doctrine/doctrine-bundle" : "*"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "LemLabs\\UserBundle" : ""
+        }
+    },
+    "target-dir" : "LemLabs/UserBundle",
+	"minimum-stability" : "dev"
+}
